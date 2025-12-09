@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ameer Khan — Resume</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg: #f8f8f8;
+        --card-bg: #ffffff;
+        --text: #1a1a1a;
+        --muted: #6f6f6f;
+        --border: #e5e5e5;
+        --accent: #000000;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: var(--bg);
+        margin: 0;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        color: var(--text);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    /* Header Section */
+    .header {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+        background: #ddd;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid var(--border);
+    }
+
+    .title-area .name {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .title-area .role {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--muted);
+        margin-top: 4px;
+    }
+
+    .contact {
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--muted);
+    }
+    .contact a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        color: var(--accent);
+    }
+
+    p, li {
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--text);
+    }
+
+    .section {
+        margin-bottom: 10px;
+    }
+
+    .chip {
+        padding: 6px 10px;
+        border-radius: 6px;
+        background: #f2f2f2;
+        font-size: 13px;
+        margin: 4px;
+        border: 1px solid var(--border);
+        display: inline-block;
+    }
+
+    .job, .project, .edu {
+        margin-bottom: 18px;
+    }
+
+    .job .title, .project .title, .edu .title {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .muted {
+        color: var(--muted);
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <!-- Placeholder Profile Image -->
+        <div class="profile-pic" style="background-image: url('profile.jpg');"></div>
+
+        <div class="title-area">
+            <div class="name">Ameer Khan</div>
+            <div class="role">GenAI Engineer</div>
+
+            <div class="contact">
+                <div>Email: <a href="mailto:ameerk1428@gmail.com">ameerk1428@gmail.com</a></div>
+                <div>Phone: +91 70974 27060</div>
+                <div>
+                    <a href="#">GitHub</a> • <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <h2>Summary</h2>
+    <p>
+        GenAI Engineer specializing in LLM applications, agentic workflows, LangChain, LangGraph,
+        and real-time retrieval systems. Experienced with Python, RAG, vector databases, and cloud deployment
+        using Docker and lightweight CI/CD pipelines. Strong focus on building intelligent, production-ready
+        AI systems with clean engineering practices.
+    </p>
+
+    <!-- EXPERIENCE -->
+    <h2>Work Experience</h2>
+
+    <div class="job">
+        <div class="title">GenAI Trainee — Ignitz Solutions</div>
+        <div class="muted">Aug 2025 – Present</div>
+        <p>
+            Built ElevateU, an AI-powered learning platform with personalized LMS flows and an intelligent student support agent.
+            Designed dashboards, progress tracking flows, and integrated a multi-agent system for real-time learner guidance.
+        </p>
+    </div>
+
+    <div class="job">
+        <div class="title">AI Intern — Cohyve</div>
+        <div class="muted">May 2025 – Aug 2025</div>
+        <p>
+            Developed RUMI, an agentic chatbot using RAG + Google ADK. Implemented optimized retrieval, memory mechanisms,
+            and robust prompt-chaining workflows for complex reasoning tasks.
+        </p>
+    </div>
+
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+
+    <div class="project">
+        <div class="title">Optimizing Energy Efficiency in Multi-Cloud Environments (EAAWAS)</div>
+        <p>
+            Engineered a dynamic ML-driven system using LSTM/ARIMA/Bayesian optimization for energy-efficient
+            workload placement across multiple AWS regions. Reduced energy usage and carbon footprint while
+            maintaining high availability.
+        </p>
+    </div>
+
+    <div class="project">
+        <div class="title">Kubernetes CI/CD Pipeline with Observability</div>
+        <p>
+            Developed a secure 3-tier application deployment pipeline using EKS, Terraform, Docker,
+            GitHub Actions, SonarQube, ArgoCD, Prometheus, and Grafana.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Technical Skills</h2>
+    <div>
+        <span class="chip">LangChain</span>
+        <span class="chip">LangGraph</span>
+        <span class="chip">Google ADK</span>
+        <span class="chip">RAG</span>
+        <span class="chip">Agentic AI</span>
+        <span class="chip">Prompt Engineering</span>
+        <span class="chip">VectorDB</span>
+        <span class="chip">Python</span>
+        <span class="chip">Flask</span>
+        <span class="chip">Docker</span>
+        <span class="chip">GitHub Actions</span>
+        <span class="chip">SQL</span>
+        <span class="chip">MongoDB</span>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+
+    <div class="edu">
+        <div class="title">B.Tech — Computer Science and Engineering</div>
+        <div class="muted">Lingaya’s Institute of Management and Technology — 2025</div>
+        <p>CGPA: 6.75</p>
+    </div>
+
+    <div class="edu">
+        <div class="title">Diploma — Electronics & Communication Engineering</div>
+        <div class="muted">Govt. Polytechnic, Vijayawada — 2020</div>
+        <p>Percentage: 64.15%</p>
+    </div>
+
+    <div class="edu">
+        <div class="title">SSC — Sravanthi High School — 2017</div>
+        <p>GPA: 9.7</p>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <h2>Certifications</h2>
+    <ul>
+        <li>NPTEL Elite Plus Silver: Cloud Computing — 2024</li>
+        <li>EDX Verified: DevOps Basics for Everyone — 2024</li>
+        <li>Salesforce Developer Virtual Internship — 2023</li>
+    </ul>
+
+    <footer>Designed for GitHub Pages • © Ameer Khan</footer>
+</div>
+</body>
+</html>
